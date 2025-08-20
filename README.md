@@ -52,7 +52,7 @@ print("1D Array:", arr1)
   [20 21 22 23 ... 49]
   ```
 - Run your script using the command: `python ./lab6a.py` and verify the output.
-
+---
 ### lab16b.py - Creating 2D Arrays and Array Attributes
 **Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
 
@@ -77,6 +77,43 @@ print("2D Array:\n", arr2)
    - array3.size → should show 9
    - array3.dtype → data type of the elements
 - Run your script using the command: `python ./la6b.py` and verify the output.
+---
+### lab16c.py - Accessing and Modifying Elements (Indexing and Slicing)
+**Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
+NumPy arrays allow you to access and modify elements using indexing and slicing. This works similarly to Python lists, but NumPy also supports powerful multi-dimensional indexing.
+**Example Code, Run and Observe**
+```Python
+import numpy as np
+
+arr1 = np.array([2, 4, 6, 8, 10, 12, 14])
+print("Original 1D Array:", arr1)
+
+# Indexing
+print("First element:", arr1[0])
+print("Last element:", arr1[-1])
+
+# Slicing
+print("Elements from index 1 to 4:", arr1[1:5])       # middle elements
+print("Elements from start to index 4 (exclusive):", arr1[:4])
+print("Elements from index 3 to the end:", arr1[3:])
+print("Elements with a step of 2:", arr1[::2])
+
+# Modifying values
+arr1[1] = 99
+print("Modified 1D Array:", arr1)
+
+```
+**Instructions:**
+- Create a 1D NumPy array with values [2, 4, 6, 8, 10, 12, 14].
+- Print:
+   - The first element
+   - The last element
+   - Elements from index 1 to 4
+   - Elements from the beginning to index 4 (exclusive)
+   - Elements from index 3 to the end
+   - Elements with a step of 2
+- Modify the second element (index 1) to 99 and print the updated array.
+- Run your script with the command: `python ./lab6c.py` and verify the output.
 
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
