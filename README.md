@@ -330,7 +330,7 @@ print("DataFrame:\n", df)
 - **Hint:** Look into Pandas functions like .head(), .describe(), boolean indexing, column selection, and .sort_values() to complete these tasks.
 - Run your script with the command: `python ./lab6i.py` and verify the output.
 ---
-### lab6i.py - Analyzing Real-World Movie Data
+### lab6j.py - Analyzing Real-World Movie Data
 **Objective:** Practice advanced Pandas operations including summary statistics, filtering, grouping, and basic plotting using a real dataset.
 
 CSV (Comma-Separated Values) files are widely used for storing tabular data. Pandas provides simple functions to read from and write to CSV files. In this task, you will work with a **real-world dataset**: the IMDB Top 250 movies. You will practice reading data from a CSV file, exploring it, performing aggregations, and visualizing results using Pandas and Matplotlib.
@@ -352,7 +352,7 @@ print("\nDataFrame from CSV:\n", df_from_csv)
    - Print **unique values** in the `"Genre"` column.  
    - Count how many movies are **not made in the USA**.
 - **Top-rated movies**: Find the **top 10 highest-rated movies** by the rating column.
--  **Decade analysis**:
+-  **Decade analysis**: Find out what the best decade of movies is:
    -  Define a Python function that calculates the **decade** from the year.  
      ```python
      def get_decade(year):
@@ -360,7 +360,8 @@ print("\nDataFrame from CSV:\n", df_from_csv)
      ```
    - Add a **decade column** to the DataFrame.  
    - Group the data by decade and calculate the **mean rating** per decade.
-   - **Hint:** Use Pandas functions such as .info(), .describe(), .head(), .tail(), .unique(), .groupby(), .mean(), .sort_values().
+- **Hint:** Use Pandas functions such as .info(), .describe(), .head(), .tail(), .unique(), .groupby(), .mean(), .sort_values().
+- Run your script with the command: `python ./lab6i.py` and verify the output.
 
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
