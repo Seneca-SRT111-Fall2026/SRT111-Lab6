@@ -260,23 +260,27 @@ A DataFrame is like a table or spreadsheet in Python. Each column is a Series, s
 ```Python
 import pandas as pd
 
-# Create a DataFrame from a dictionary
+# Create a DataFrame from a dictionary that contains student course enrollment data
 data = {
-    'Name': ['Maija', 'Nick', 'Mohamed'],
-    'Age': [25, 30, 28],
-    'City': ['Toronto', 'Vancouver', 'Montreal']
+    "Student": ["Amira", "David", "Sofia", "Jamal"],
+    "Program": ["Computer Science", "Business", "Engineering", "Psychology"],
+    "Year": [1, 2, 3, 4],
+    "GPA": [3.6, 3.2, 3.9, 3.4]
 }
+
 df = pd.DataFrame(data)
 print("DataFrame:\n", df)
 
 # Access a column
-print("\nColumn 'Age':\n", df['Age'])
+print("\nColumn 'GPA':\n", df["GPA"])
 
 # Access the first row
 print("\nFirst row:\n", df.iloc[0])
 ```
 **Instructions:**
 - Create a DataFrame with the following information about library books:
+   -    **Hint**: You can first create **separate Python lists** (e.g., `titles`, `authors`, `years`, etc.) and then combine them into a dictionary before creating the DataFrame.  
+
   
 | Title                              | Author              | Year | Pages | Genre        |
 |------------------------------------|---------------------|------|-------|--------------|
