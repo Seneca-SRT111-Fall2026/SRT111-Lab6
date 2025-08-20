@@ -151,7 +151,7 @@ print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
 - Run your script with the command: `python ./lab6d.py` and verify the output.
 ---
 ### lab16de.py - Arithmetic Operations and Broadcasting in NumPy
-**Objective:** Learn how to apply common slicing scenarios in 2D arrays.
+**Objective:** To practice performing element-wise arithmetic operations on 1D and 2D NumPy arrays.
 
 NumPy allows element-wise arithmetic on arrays, which is much faster and more concise than using Python loops. Broadcasting lets you perform operations on arrays of different shapes in a consistent way. Look at the example given below:
 ```Python
