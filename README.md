@@ -277,6 +277,7 @@ print("\nFirst row:\n", df.iloc[0])
 ```
 **Instructions:**
 - Create a DataFrame with the following information about library books:
+  
 | Title                              | Author              | Year | Pages | Genre        |
 |------------------------------------|---------------------|------|-------|--------------|
 | "The Great Gatsby"                 | F. Scott Fitzgerald | 1925 | 180   | Fiction      |
