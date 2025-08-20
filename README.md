@@ -10,7 +10,7 @@ By the end of this lab, you will have a solid foundation in using these librarie
 - Understand the role of Pandas in data analysis.
 - Create and manipulate Pandas Series and DataFrames.
 - Perform filtering, grouping, and aggregations in Pandas.
-- Apply both libraries to solve data-driven problems.# Submission Instructions
+- Apply both libraries to solve data-driven problems.
 
 # Submission Instructions
 For each task:
