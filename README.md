@@ -330,6 +330,38 @@ print("DataFrame:\n", df)
 - **Hint:** Look into Pandas functions like .head(), .describe(), boolean indexing, column selection, and .sort_values() to complete these tasks.
 - Run your script with the command: `python ./lab6i.py` and verify the output.
 
+### lab6i.py - Analyzing Real-World Movie Data
+**Objective:** Practice advanced Pandas operations including summary statistics, filtering, grouping, and basic plotting using a real dataset.
+
+CSV (Comma-Separated Values) files are widely used for storing tabular data. Pandas provides simple functions to read from and write to CSV files. In this task, you will work with a **real-world dataset**: the IMDB Top 250 movies. You will practice reading data from a CSV file, exploring it, performing aggregations, and visualizing results using Pandas and Matplotlib.
+
+To read a CSV file into a DataFrame, you can use the pd.read_csv function.
+```Python
+# Reading data from a CSV file
+df_from_csv = pd.read_csv('sample.csv')  # Replace 'sample.csv' with your file path
+print("\nDataFrame from CSV:\n", df_from_csv)
+```
+
+**Instructions:**
+- In your lab6i.py file, create a new data frame from a csv file located in : https://github.com/itiievskyi/IMDB-Top-250/blob/master/imdb_top_250.csv.
+-  **Explore the DataFrame**:  
+   - Print a **summary** of the data (`info()` and `describe()`).  
+   - Print the **first 10** and **last 10 rows**.
+- **Basic analysis**:  
+   - Find the **earliest** and **latest** movie year (hint: `min()` and `max()` on the year column).  
+   - Print **unique values** in the `"Genre"` column.  
+   - Count how many movies are **not made in the USA**.
+- **Top-rated movies**: Find the **top 10 highest-rated movies** by the rating column.
+-  **Decade analysis**:
+   -  Define a Python function that calculates the **decade** from the year.  
+     ```python
+     def get_decade(year):
+         return (year // 10) * 10
+     ```
+   - Add a **decade column** to the DataFrame.  
+   - Group the data by decade and calculate the **mean rating** per decade.
+   - **Hint:** Use Pandas functions such as .info(), .describe(), .head(), .tail(), .unique(), .groupby(), .mean(), .sort_values().
+
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
 - The PDF must include screenshots of the following scripts and their terminal output, clearly showing your GitHub username.
