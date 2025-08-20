@@ -66,11 +66,11 @@ print("2D Array:\n", arr2)
 - In your lab6b.py file create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
 - Print your array with a descriptive message, e.g. "3x3 Array:"
 - Expected output (both arrays should look like):
-  ```yaml
+```yaml
 [[1 2 3]
  [4 5 6]
  [7 8 9]]
-  ```
+```
 - Next print the following attributes of `array3`.
    - array3.shape → should show (3, 3)
    - array3.size → should show 9
