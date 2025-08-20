@@ -140,8 +140,6 @@ print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
 # Output:
 # [[1 2 3]
 #  [5 6 7]]
-
-
 ```
 **Instructions:**
 - Create a 2D array with values 1–12 arranged in 3 rows × 4 columns. Save it in `array2`.
@@ -151,7 +149,40 @@ print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
    - Third column
    - Subarray of the first 2 rows and first 2 columns
 - Run your script with the command: `python ./lab6d.py` and verify the output.
+---
+### lab16de.py - Arithmetic Operations and Broadcasting in NumPy
+**Objective:** Learn how to apply common slicing scenarios in 2D arrays.
 
+NumPy allows element-wise arithmetic on arrays, which is much faster and more concise than using Python loops. Broadcasting lets you perform operations on arrays of different shapes in a consistent way. Look at the example given below:
+```Python
+import numpy as np
+
+# Create two 1D arrays
+a = np.array([1, 2, 3])
+b = np.array([10, 20, 30])
+
+# Example of addition
+print("Addition:", a + b)  # [11 22 33]
+
+# Broadcasting example: adding a scalar to an array
+print("Add 5 to each element:", a + 5)  # [6 7 8]
+
+```
+**Instructions:**
+- In your lab6e.py file, create the following 1D arrays:
+```Python
+arr1 = np.array([2, 4, 6, 8])
+arr2 = np.array([1, 3, 5, 7])
+```
+- Perform all of the following operations and print the results:
+   - Addition
+   - Subtraction
+   - Multiplication
+- Add 10 to each element of `arr1` using broadcasting and print print the updated array.
+- Multiply each element of `arr2` by 2, and print the updated array
+- Create a 2D array of your choice of elements.
+- Add 5 to all elements and print your array.
+- Run your script with the command: `python ./lab6e.py` and verify the output.
 
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
