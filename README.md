@@ -79,7 +79,7 @@ print("2D Array:\n", arr2)
 - Run your script using the command: `python ./la6b.py` and verify the output.
 ---
 ### lab16c.py - Accessing and Modifying Elements (Indexing and Slicing)
-**Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
+**Objective:** Learn how to apply common slicing scenarios in 1D arrays.
 NumPy arrays allow you to access and modify elements using indexing and slicing. This works similarly to Python lists, but NumPy also supports powerful multi-dimensional indexing.
 **Example Code, Run and Observe**
 ```Python
