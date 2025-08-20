@@ -255,8 +255,14 @@ print("\nSeries from NumPy array:\n", series_array)
 ### lab6h.py - Introduction to Pandas DataFrames
 **Objective:** Learn to create a DataFrame, explore its columns, rows, and attributes, access elements by label or position, and add new columns.
 
-A DataFrame is like a table or spreadsheet in Python. Each column is a Series, so a DataFrame can store numeric, string, or categorical data. DataFrames have rows and columns, can be labeled, and support row/column selection, addition of new columns, and basic analysis.
+A DataFrame is like a table or spreadsheet in Python. Each column is a Series, so a DataFrame can store numeric, string, or categorical data. DataFrames have rows and columns, can be labeled, and support row/column selection, addition of new columns, and basic analysis. Pandas DataFrame can be created in multiple ways; you can create them:
+- From a dictionary of lists
+- From a list of dictionaries
+- From a list of lists
+- From NumPy arrays
+- From external sources (CSV, Excel, SQL, etc.)
 
+Below is an example of creating a dataframe from the dictionary of lists:
 ```Python
 import pandas as pd
 
@@ -279,8 +285,6 @@ print("\nFirst row:\n", df.iloc[0])
 ```
 **Instructions:**
 - Create a DataFrame with the following information about library books:
-   -    **Hint**: You can first create **separate Python lists** (e.g., `titles`, `authors`, `years`, etc.) and then combine them into a dictionary before creating the DataFrame.  
-
   
 | Title                              | Author              | Year | Pages | Genre        |
 |------------------------------------|---------------------|------|-------|--------------|
@@ -290,6 +294,7 @@ print("\nFirst row:\n", df.iloc[0])
 | "The Art of Computer Programming"  | Donald Knuth        | 1968 | 672   | Computer Sci |
 | "Sapiens: A Brief History of Humankind" | Yuval Noah Harari | 2011 | 498   | History      |
 
+- **Hint**: You can first create **separate Python lists** (e.g., `titles`, `authors`, `years`, etc.) and then combine them into a dictionary before creating the DataFrame.  
 - Print the entire DataFrame.
 - Perform the following operations:
 - Print the `"Title"` column.  
