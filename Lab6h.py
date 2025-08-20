@@ -4,6 +4,6 @@
 # Author:
 # Date:
 # Purpose: Create Arrays.
-# Usage: ./lab6g.py
+# Usage: ./lab6h.py
 
 # TO DO 1: Create and explore the Pandas dataframe according to instructions given in readme.md file.
