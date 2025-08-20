@@ -4,8 +4,14 @@ In this lab, you will learn how to work with NumPy and Pandas, two of the most w
 By the end of this lab, you will have a solid foundation in using these libraries for numerical computation and data analysis.
 
 # Lab Objectives
-- To be able to create and use arrays in NumPy.
-- To be able to create and use series and data frames in Pandas.
+- Understand the role of NumPy in numerical computing.
+- Create and manipulate NumPy arrays.
+- Perform mathematical and statistical operations on arrays.
+- Understand the role of Pandas in data analysis.
+- Create and manipulate Pandas Series and DataFrames.
+- Perform filtering, grouping, and aggregations in Pandas.
+- Apply both libraries to solve data-driven problems.# Submission Instructions
+
 # Submission Instructions
 For each task:
 1. **Write the script** in Codespaces.  
