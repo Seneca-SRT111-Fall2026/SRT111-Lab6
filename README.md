@@ -294,7 +294,6 @@ print("\nFirst row:\n", df.iloc[0])
 | "The Art of Computer Programming"  | Donald Knuth        | 1968 | 672   | Computer Sci |
 | "Sapiens: A Brief History of Humankind" | Yuval Noah Harari | 2011 | 498   | History      |
 
-- **Hint**: You can first create **separate Python lists** (e.g., `titles`, `authors`, `years`, etc.) and then combine them into a dictionary before creating the DataFrame.  
 - Print the entire DataFrame.
 - Perform the following operations:
 - Print the `"Title"` column.  
@@ -303,8 +302,34 @@ print("\nFirst row:\n", df.iloc[0])
    - Print the number of rows and columns using `.shape`.  
    - Print the data type of each column using `.dtypes`.
 - Run your script with the command: `python ./lab6h.py` and verify the output.
- 
- 
+---
+### lab6i.py - Exploring and Analyzing a DataFrame
+**Objective:** Learn how to explore, summarize, and filter data in a DataFrame
+
+**Instructions:**
+- In your lab6i.py file, create a DataFrame of student grades with the following data:
+```Python
+import pandas as pd
+
+data = {
+    "Name": ["Amira", "David", "Sofia", "Liam", "Noah"],
+    "Course": ["Math", "Math", "Science", "History", "Science"],
+    "Grade": [85, 92, 78, 88, 95],
+    "Year": [1, 2, 1, 3, 2]
+}
+
+df = pd.DataFrame(data)
+print("DataFrame:\n", df)
+```
+- Write code to do the following:
+   - Print the first 3 rows.
+   - Get summary statistics for numeric columns.
+   - Find all students with grades above 90.
+   - Print the names of students enrolled in Science courses.
+   - Sort the DataFrame by Grade in descending order.
+- **Hint:** Look into Pandas functions like .head(), .describe(), boolean indexing, column selection, and .sort_values() to complete these tasks.
+- Run your script with the command: `python ./lab6i.py` and verify the output.
+
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
 - The PDF must include screenshots of the following scripts and their terminal output, clearly showing your GitHub username.
