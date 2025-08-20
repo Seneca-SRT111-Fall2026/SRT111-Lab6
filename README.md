@@ -335,7 +335,7 @@ print("DataFrame:\n", df)
 
 CSV (Comma-Separated Values) files are widely used for storing tabular data. Pandas provides simple functions to read from and write to CSV files. In this task, you will work with a **real-world dataset**: the IMDB Top 250 movies. You will practice reading data from a CSV file, exploring it, performing aggregations, and visualizing results using Pandas and Matplotlib.
 
-To read a CSV file into a DataFrame, you can use the pd.read_csv function.
+To read a CSV file into a DataFrame, you can use the `pd.read_csv` function.
 ```Python
 # Reading data from a CSV file
 df_from_csv = pd.read_csv('sample.csv')  # Replace 'sample.csv' with your file path
