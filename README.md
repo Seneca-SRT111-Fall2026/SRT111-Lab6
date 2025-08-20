@@ -108,10 +108,50 @@ print("Modified 1D Array:", arr1)
 - Print:
    - The first element
    - The last element
-   - Elements from index 2 to 5
+   - Elements from index 2 to end
    - Elements with a step of 3
 - Modify the second element (index 1) to 99 and print the updated array.
 - Run your script with the command: `python ./lab6c.py` and verify the output.
+---
+### lab16dc.py - Indexing and Slicing on 2D Array
+**Objective:** Learn how to apply common slicing scenarios in 2D arrays.
+You are given some examples below, you may want to run this code and observe the output.
+```Python
+import numpy as np
+
+# Create a 2D array with 3 rows and 4 columns
+arr2d = np.array([[1, 2, 3, 4],
+                  [5, 6, 7, 8],
+                  [9, 10, 11, 12]])
+
+print("Original 2D Array:\n", arr2d)
+
+# Access a single element: row 0, column 2
+print("Element at row 0, col 2:", arr2d[0, 2])  # Output: 3
+
+# Access a full row: row 1 (second row)
+print("Second row:", arr2d[1, :])  # Output: [5 6 7 8]
+
+# Access a full column: column 3 (fourth column)
+print("Fourth column:", arr2d[:, 3])  # Output: [ 4  8 12]
+
+# Slice a subarray: first 2 rows and first 3 columns
+print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
+# Output:
+# [[1 2 3]
+#  [5 6 7]]
+
+
+```
+**Instructions:**
+- Create a 2D array with values 1–12 arranged in 3 rows × 4 columns. Save it in `array2`.
+- Print the following using indexing and slicing::
+   - Element at row 1, column 2
+   - First row
+   - Third column
+   - Subarray of the first 2 rows and first 2 columns
+- Run your script with the command: `python ./lab6d.py` and verify the output.
+
 
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
