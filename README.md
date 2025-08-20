@@ -26,7 +26,52 @@ For each task:
 
 ## INVESTIGATION 1: CREATING AND USING ARRAYS IN NumPy
 
-NumPy is a Python library implemented in C language for creating and manipulating data in large arrays at speed. In the slides you saw different ways of creating arrays and initializing them. This lab deals with testing your understanding of those methods discussed in the slides.
+NumPy is a Python library implemented in C language for creating and manipulating data in large arrays at speed. It provides:
+- Multi-dimensional arrays (ndarray) that are much more efficient than Python lists.
+- Mathematical operations on entire arrays without writing loops (vectorization).
+- Statistical and linear algebra functions for scientific computing.
+- Tools for reshaping, slicing, and manipulating data efficiently.
+
+NumPy is the foundation for many other libraries such as Pandas, Matplotlib, SciPy, and Scikit-learn. In the slides you saw different ways of creating arrays and initializing them. This lab deals with testing your understanding of those methods discussed in the slides.
+
+### lab16a.py - Creating 1D Arrays
+**Objective:** Learn how to create NumPy arrays from Python lists.
+
+NumPy, provides an array object similar to a list in Python but with added functionality for numerical operations.
+```Python
+import numpy as np  # Step 1: Import NumPy
+# Creating a 1D array using a Python list
+arr1 = np.array([1, 2, 3, 4, 5])
+print("1D Array:", arr1)
+```
+
+- In your lab6a.py file write code create an array with values from 20 to 49 (inclusive) using `np.arange()`. Save it in a variable called `array1`.
+- Create the same array in a different way, for example either using `linspace` or a different method and save it in a variable called `array2`.
+- Expected output (both arrays should look like):
+  ```yaml
+  [20 21 22 23 ... 49]
+  ```
+- Run your script using the command: `python ./lab6a.py` and verify the output.
+
+### lab16b.py - Creating 2D Arrays
+**Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists.
+
+NumPy can also create multi-dimensional arrays, which are useful for working with tabular or matrix-like data.
+```Python
+import numpy as np  # Step 1: Import NumPy
+# Creating a 2D array (matrix) from a list of lists
+arr2 = np.array([[1, 2, 3], [4, 5, 6]])
+print("2D Array:\n", arr2)
+```
+- In your lab6b.py file create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
+- Print your array with a descriptive message, e.g. "3x3 Array:"
+- Expected output (both arrays should look like):
+  ```yaml
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]
+  ```
+- Run your script using the command: `python ./la6b.py` and verify the output.
 
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
