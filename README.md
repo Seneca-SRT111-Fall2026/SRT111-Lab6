@@ -44,7 +44,7 @@ import numpy as np  # Step 1: Import NumPy
 arr1 = np.array([1, 2, 3, 4, 5])
 print("1D Array:", arr1)
 ```
-
+**Instructions:**
 - In your lab6a.py file write code create an array with values from 20 to 49 (inclusive) using `np.arange()`. Save it in a variable called `array1`.
 - Create the same array in a different way, for example either using `linspace` or a different method and save it in a variable called `array2`.
 - Expected output (both arrays should look like):
@@ -53,8 +53,8 @@ print("1D Array:", arr1)
   ```
 - Run your script using the command: `python ./lab6a.py` and verify the output.
 
-### lab16b.py - Creating 2D Arrays
-**Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists.
+### lab16b.py - Creating 2D Arrays and Array Attributes
+**Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
 
 NumPy can also create multi-dimensional arrays, which are useful for working with tabular or matrix-like data.
 ```Python
@@ -63,9 +63,10 @@ import numpy as np  # Step 1: Import NumPy
 arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 print("2D Array:\n", arr2)
 ```
+**Instructions:**
 - In your lab6b.py file create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
 - Print your array with a descriptive message, e.g. "3x3 Array:"
-- Expected output (both arrays should look like):
+- Expected output of the array is:
 ```yaml
 [[1 2 3]
  [4 5 6]
