@@ -104,7 +104,7 @@ print("Modified 1D Array:", arr1)
 
 ```
 **Instructions:**
-- In your lab6c.py file write code to create a 1D NumPy array with values [3, 6, 9, 12, 15, 18, 21].
+- In your lab6d.py file write code to create a 1D NumPy array with values [3, 6, 9, 12, 15, 18, 21].
 - Print:
    - The first element
    - The last element
@@ -204,7 +204,7 @@ arr3d = arr.reshape(2, 2, 3)
 print("\nReshaped to 2x2x3 Array:\n", arr3d)
 ```
 **Instructions:**
-- Create a 1D array with values from 1 to 12.
+- In your lab6f.py file, Create a 1D array with values from 1 to 12.
 - Reshape it into a 3×4 2D array and print it.
 - Reshape the same array into a 2×2×3 3D array and print it.
 - Verify that the total number of elements is the same in all shapes.
@@ -284,7 +284,7 @@ print("\nColumn 'GPA':\n", df["GPA"])
 print("\nFirst row:\n", df.iloc[0])
 ```
 **Instructions:**
-- Create a DataFrame with the following information about library books:
+- In your Lab6h.py write code to create a DataFrame with the following information about library books:
   
 | Title                              | Author              | Year | Pages | Genre        |
 |------------------------------------|---------------------|------|-------|--------------|
