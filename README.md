@@ -104,7 +104,7 @@ print("Modified 1D Array:", arr1)
 
 ```
 **Instructions:**
-- Create a 1D NumPy array with values [3, 6, 9, 12, 15, 18, 21].
+- In your lab6c.py file write code to create a 1D NumPy array with values [3, 6, 9, 12, 15, 18, 21].
 - Print:
    - The first element
    - The last element
@@ -142,7 +142,7 @@ print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
 #  [5 6 7]]
 ```
 **Instructions:**
-- Create a 2D array with values 1–12 arranged in 3 rows × 4 columns. Save it in `array2`.
+- In your lab6c.py file write code to create a 2D array with values 1–12 arranged in 3 rows × 4 columns. Save it in `array2`.
 - Print the following using indexing and slicing::
    - Element at row 1, column 2
    - First row
