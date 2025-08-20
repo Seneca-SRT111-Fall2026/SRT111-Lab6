@@ -219,7 +219,7 @@ Why use Pandas:
 - Perform filtering, grouping, and aggregation.
 - Combine multiple datasets efficiently.
 
-### lab6g.py - Reshaping Arrays in NumPy
+### lab6g.py - Creating and Exploring Pandas Series
 **Objective:** Learn how to create Pandas Series with values, index labels, and a name, and access elements by position or label.
 
 A Pandas Series is like a single column of data with labels (index) for each element. It can also have a name, similar to a column title in a spreadsheet. Series can be created from lists, NumPy arrays, or dictionaries.
