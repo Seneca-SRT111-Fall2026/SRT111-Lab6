@@ -80,6 +80,7 @@ print("2D Array:\n", arr2)
 ---
 ### lab16c.py - Accessing and Modifying Elements (Indexing and Slicing)
 **Objective:** Learn how to apply common slicing scenarios in 1D arrays.
+
 NumPy arrays allow you to access and modify elements using indexing and slicing. This works similarly to Python lists, but NumPy also supports powerful multi-dimensional indexing. Look at the examples below. You may want to run this code and observe the output.
 ```Python
 import numpy as np
