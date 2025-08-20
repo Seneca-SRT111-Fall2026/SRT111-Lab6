@@ -252,7 +252,49 @@ print("\nSeries from NumPy array:\n", series_array)
 - Run your script with the command: `python ./lab6g.py` and verify the output.
 ---
 
+### lab6h.py - Introduction to Pandas DataFrames
+**Objective:** Learn to create a DataFrame, explore its columns, rows, and attributes, access elements by label or position, and add new columns.
 
+A DataFrame is like a table or spreadsheet in Python. Each column is a Series, so a DataFrame can store numeric, string, or categorical data. DataFrames have rows and columns, can be labeled, and support row/column selection, addition of new columns, and basic analysis.
+
+```Python
+import pandas as pd
+
+# Create a DataFrame from a dictionary
+data = {
+    'Name': ['Maija', 'Nick', 'Mohamed'],
+    'Age': [25, 30, 28],
+    'City': ['Toronto', 'Vancouver', 'Montreal']
+}
+df = pd.DataFrame(data)
+print("DataFrame:\n", df)
+
+# Access a column
+print("\nColumn 'Age':\n", df['Age'])
+
+# Access the first row
+print("\nFirst row:\n", df.iloc[0])
+```
+**Instructions:**
+- Create a DataFrame with the following information about library books:
+| Title                              | Author              | Year | Pages | Genre        |
+|------------------------------------|---------------------|------|-------|--------------|
+| "The Great Gatsby"                 | F. Scott Fitzgerald | 1925 | 180   | Fiction      |
+| "A Brief History of Time"          | Stephen Hawking     | 1988 | 212   | Science      |
+| "To Kill a Mockingbird"            | Harper Lee          | 1960 | 281   | Fiction      |
+| "The Art of Computer Programming"  | Donald Knuth        | 1968 | 672   | Computer Sci |
+| "Sapiens: A Brief History of Humankind" | Yuval Noah Harari | 2011 | 498   | History      |
+
+- Print the entire DataFrame.
+- Perform the following operations:
+- Print the `"Title"` column.  
+   - Print the `"Author"` column.  
+   - Print the first 3 rows using `.head()`.  
+   - Print the number of rows and columns using `.shape`.  
+   - Print the data type of each column using `.dtypes`.
+- Run your script with the command: `python ./lab6h.py` and verify the output.
+ 
+ 
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
 - The PDF must include screenshots of the following scripts and their terminal output, clearly showing your GitHub username.
