@@ -376,3 +376,5 @@ print("\nDataFrame from CSV:\n", df_from_csv)
     - lab6h.py
     - lab6i.py
     - lab6j.py
+- Ensure the code and output are clearly readable. Screenshots should be high-resolution (minimum 800x600) and not blurry.
+-  Blurry or unreadable submissions will be returned for redo. Resubmissions will only be graded as Satisfactory with a grade of 0, provided the work is satisfactory.
