@@ -104,14 +104,12 @@ print("Modified 1D Array:", arr1)
 
 ```
 **Instructions:**
-- Create a 1D NumPy array with values [2, 4, 6, 8, 10, 12, 14].
+- Create a 1D NumPy array with values [3, 6, 9, 12, 15, 18, 21].
 - Print:
    - The first element
    - The last element
-   - Elements from index 1 to 4
-   - Elements from the beginning to index 4 (exclusive)
-   - Elements from index 3 to the end
-   - Elements with a step of 2
+   - Elements from index 2 to 5
+   - Elements with a step of 3
 - Modify the second element (index 1) to 99 and print the updated array.
 - Run your script with the command: `python ./lab6c.py` and verify the output.
 
