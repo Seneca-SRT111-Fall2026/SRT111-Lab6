@@ -113,7 +113,7 @@ print("Modified 1D Array:", arr1)
 - Modify the second element (index 1) to 99 and print the updated array.
 - Run your script with the command: `python ./lab6c.py` and verify the output.
 ---
-### lab16dc.py - Indexing and Slicing on 2D Array
+### lab16d.py - Indexing and Slicing on 2D Array
 **Objective:** Learn how to apply common slicing scenarios in 2D arrays.
 You are given some examples below, you may want to run this code and observe the output.
 ```Python
@@ -150,7 +150,7 @@ print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
    - Subarray of the first 2 rows and first 2 columns
 - Run your script with the command: `python ./lab6d.py` and verify the output.
 ---
-### lab16de.py - Arithmetic Operations and Broadcasting in NumPy
+### lab16e.py - Arithmetic Operations and Broadcasting in NumPy
 **Objective:** To practice performing element-wise arithmetic operations on 1D and 2D NumPy arrays.
 
 NumPy allows element-wise arithmetic on arrays, which is much faster and more concise than using Python loops. Broadcasting lets you perform operations on arrays of different shapes in a consistent way. Look at the example given below:
@@ -183,7 +183,43 @@ arr2 = np.array([1, 3, 5, 7])
 - Create a 2D array of your choice of elements.
 - Add 5 to all elements and print your array.
 - Run your script with the command: `python ./lab6e.py` and verify the output.
+---
+### lab16f.py - Reshaping Arrays in NumPy
+**Objective:** Learn how to change the shape of 1D arrays into 2D or 3D arrays using NumPy’s reshape() method, without modifying the array data.
 
+Sometimes, you may need to change the shape of an array to make it suitable for certain calculations or to match the shape of other arrays. NumPy’s reshape() method allows you to transform 1D arrays into 2D or 3D arrays without changing the data. This is a key skill when working with numerical data in matrices or tensors.
+```Python
+import numpy as np
+
+# Create a 1D array of 12 elements
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+print("Original 1D Array:\n", arr)
+
+# Reshape to a 3x4 2D array
+arr2d = arr.reshape(3, 4)
+print("\nReshaped to 3x4 Array:\n", arr2d)
+
+# Reshape to 2x2x3 3D array
+arr3d = arr.reshape(2, 2, 3)
+print("\nReshaped to 2x2x3 Array:\n", arr3d)
+
+```
+**Instructions:**
+- Create a 1D array with values from 1 to 12.
+- Reshape it into a 3×4 2D array and print it.
+- Reshape the same array into a 2×2×3 3D array and print it.
+- Verify that the total number of elements is the same in all shapes.
+- Run your script with the command: `python ./lab6f.py` and verify the output.
+
+## INVESTIGATION 2: CREATING AND USING SERIES AND DATA FRAMES FROM Pandas
+Pandas is a Python library used for data manipulation and analysis. It provides two main data structures:
+- Series – a one-dimensional labeled array, similar to a column in a spreadsheet or a 1D NumPy array with labels.
+- DataFrame – a two-dimensional labeled data structure, like a table with rows and columns.
+Why use Pandas:
+- Easily handle tabular data.
+- Perform filtering, grouping, and aggregation.
+- Combine multiple datasets efficiently.
+- 
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
 - The PDF must include screenshots of the following scripts and their terminal output, clearly showing your GitHub username.
