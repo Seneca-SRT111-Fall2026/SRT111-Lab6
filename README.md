@@ -71,6 +71,10 @@ print("2D Array:\n", arr2)
  [4 5 6]
  [7 8 9]]
   ```
+- Next print the following attributes of `array3`.
+   - array3.shape → should show (3, 3)
+   - array3.size → should show 9
+   - array3.dtype → data type of the elements
 - Run your script using the command: `python ./la6b.py` and verify the output.
 
 ## Lab 6 Sign-Off
