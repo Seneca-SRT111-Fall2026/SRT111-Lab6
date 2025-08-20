@@ -34,7 +34,7 @@ NumPy is a Python library implemented in C language for creating and manipulatin
 
 NumPy is the foundation for many other libraries such as Pandas, Matplotlib, SciPy, and Scikit-learn. In the slides you saw different ways of creating arrays and initializing them. This lab deals with testing your understanding of those methods discussed in the slides.
 
-### lab16a.py - Creating 1D Arrays
+### lab6a.py - Creating 1D Arrays
 **Objective:** Learn how to create NumPy arrays from Python lists.
 
 NumPy, provides an array object similar to a list in Python but with added functionality for numerical operations.
@@ -53,7 +53,7 @@ print("1D Array:", arr1)
   ```
 - Run your script using the command: `python ./lab6a.py` and verify the output.
 ---
-### lab16b.py - Creating 2D Arrays and Array Attributes
+### lab6b.py - Creating 2D Arrays and Array Attributes
 **Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
 
 NumPy can also create multi-dimensional arrays, which are useful for working with tabular or matrix-like data.
@@ -78,7 +78,7 @@ print("2D Array:\n", arr2)
    - array3.dtype → data type of the elements
 - Run your script using the command: `python ./la6b.py` and verify the output.
 ---
-### lab16c.py - Accessing and Modifying Elements (Indexing and Slicing)
+### lab6c.py - Accessing and Modifying Elements (Indexing and Slicing)
 **Objective:** Learn how to apply common slicing scenarios in 1D arrays.
 
 NumPy arrays allow you to access and modify elements using indexing and slicing. This works similarly to Python lists, but NumPy also supports powerful multi-dimensional indexing. Look at the examples below. You may want to run this code and observe the output.
@@ -113,7 +113,7 @@ print("Modified 1D Array:", arr1)
 - Modify the second element (index 1) to 99 and print the updated array.
 - Run your script with the command: `python ./lab6c.py` and verify the output.
 ---
-### lab16d.py - Indexing and Slicing on 2D Array
+### lab6d.py - Indexing and Slicing on 2D Array
 **Objective:** Learn how to apply common slicing scenarios in 2D arrays.
 You are given some examples below, you may want to run this code and observe the output.
 ```Python
@@ -150,7 +150,7 @@ print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
    - Subarray of the first 2 rows and first 2 columns
 - Run your script with the command: `python ./lab6d.py` and verify the output.
 ---
-### lab16e.py - Arithmetic Operations and Broadcasting in NumPy
+### lab6e.py - Arithmetic Operations and Broadcasting in NumPy
 **Objective:** To practice performing element-wise arithmetic operations on 1D and 2D NumPy arrays.
 
 NumPy allows element-wise arithmetic on arrays, which is much faster and more concise than using Python loops. Broadcasting lets you perform operations on arrays of different shapes in a consistent way. Look at the example given below:
@@ -184,10 +184,10 @@ arr2 = np.array([1, 3, 5, 7])
 - Add 5 to all elements and print your array.
 - Run your script with the command: `python ./lab6e.py` and verify the output.
 ---
-### lab16f.py - Reshaping Arrays in NumPy
+### lab6f.py - Reshaping Arrays in NumPy
 **Objective:** Learn how to change the shape of 1D arrays into 2D or 3D arrays using NumPy’s reshape() method, without modifying the array data.
 
-Sometimes, you may need to change the shape of an array to make it suitable for certain calculations or to match the shape of other arrays. NumPy’s reshape() method allows you to transform 1D arrays into 2D or 3D arrays without changing the data. This is a key skill when working with numerical data in matrices or tensors.
+Sometimes, you may need to change the shape of an array to make it suitable for certain calculations or to match the shape of other arrays. NumPy’s reshape() method allows you to transform 1D arrays into 2D or 3D arrays without changing the data. This is a key skill when working with numerical data in matrices.
 ```Python
 import numpy as np
 
@@ -202,7 +202,6 @@ print("\nReshaped to 3x4 Array:\n", arr2d)
 # Reshape to 2x2x3 3D array
 arr3d = arr.reshape(2, 2, 3)
 print("\nReshaped to 2x2x3 Array:\n", arr3d)
-
 ```
 **Instructions:**
 - Create a 1D array with values from 1 to 12.
@@ -219,7 +218,41 @@ Why use Pandas:
 - Easily handle tabular data.
 - Perform filtering, grouping, and aggregation.
 - Combine multiple datasets efficiently.
-- 
+
+### lab6g.py - Reshaping Arrays in NumPy
+**Objective:** Learn how to create Pandas Series with values, index labels, and a name, and access elements by position or label.
+
+A Pandas Series is like a single column of data with labels (index) for each element. It can also have a name, similar to a column title in a spreadsheet. Series can be created from lists, NumPy arrays, or dictionaries.
+Look at the example given below:
+```Python
+import pandas as pd
+import numpy as np
+
+# Series from a list
+series_list = pd.Series([10, 20, 30, 40], name="Scores")
+print("Series from list:\n", series_list)
+
+# Series from a NumPy array
+arr = np.array([1, 2, 3, 4])
+series_array = pd.Series(arr)
+print("\nSeries from NumPy array:\n", series_array)
+```
+**Instructions:**
+- In the file Lab6g.py, create a numeric series from a Python list: [5, 10, 15, 20] and name it `Numbers`.
+- Create a numeric series from a NumPy array [2, 4, 6, 8] and name it `Evens`.
+- Create a numeric series from a dictionary: {'Alice': 25, 'Bob': 30, 'Charlie': 35} and name it `Ages`.
+- Create a string Series for grades and name st `Grades`:
+   - Values: ["<50", "50-59", "60-69", "70-79", "80-89", "90-100"]
+   - Index labels: ["F", "D", "C", "B", "A", "A+"]
+- Print all Series.
+- Print the first and last elements of `Numbers`, `Evens`.
+- Print the value for "Bob" from series_ages (use label-based indexing)
+- Print the values for indices "C" and "A+" from `Grades`.
+- Print the value "60-69" directly without the index.
+- Run your script with the command: `python ./lab6g.py` and verify the output.
+---
+
+
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
 - The PDF must include screenshots of the following scripts and their terminal output, clearly showing your GitHub username.
