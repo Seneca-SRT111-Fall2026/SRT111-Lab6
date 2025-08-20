@@ -329,7 +329,7 @@ print("DataFrame:\n", df)
    - Sort the DataFrame by Grade in descending order.
 - **Hint:** Look into Pandas functions like .head(), .describe(), boolean indexing, column selection, and .sort_values() to complete these tasks.
 - Run your script with the command: `python ./lab6i.py` and verify the output.
-
+---
 ### lab6i.py - Analyzing Real-World Movie Data
 **Objective:** Practice advanced Pandas operations including summary statistics, filtering, grouping, and basic plotting using a real dataset.
 
