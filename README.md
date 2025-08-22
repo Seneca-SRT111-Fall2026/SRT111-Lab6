@@ -76,7 +76,7 @@ print("2D Array:\n", arr2)
    - array3.shape → should show (3, 3)
    - array3.size → should show 9
    - array3.dtype → data type of the elements
-- Run your script using the command: `python ./la6b.py` and verify the output.
+- Run your script using the command: `python ./lab6b.py` and verify the output.
 ---
 ### lab6c.py - Accessing and Modifying Elements (Indexing and Slicing)
 **Objective:** Learn how to apply common slicing scenarios in 1D arrays.
@@ -307,7 +307,7 @@ print("\nFirst row:\n", df.iloc[0])
 **Objective:** Learn how to explore, summarize, and filter data in a DataFrame
 
 **Instructions:**
-- In your lab6i.py file, create a DataFrame of student grades with the following data:
+- In your Lab6i.py file, create a DataFrame of student grades with the following data:
 ```Python
 import pandas as pd
 
@@ -343,7 +343,7 @@ print("\nDataFrame from CSV:\n", df_from_csv)
 ```
 
 **Instructions:**
-- In your lab6i.py file, create a new data frame from a csv file located in : https://github.com/itiievskyi/IMDB-Top-250/blob/master/imdb_top_250.csv.
+- In your Lab6j.py file, create a new data frame from a csv file located in : https://github.com/itiievskyi/IMDB-Top-250/blob/master/imdb_top_250.csv.
 -  **Explore the DataFrame**:  
    - Print a **summary** of the data (`info()` and `describe()`).  
    - Print the **first 10** and **last 10 rows**.
@@ -361,7 +361,7 @@ print("\nDataFrame from CSV:\n", df_from_csv)
    - Add a **decade column** to the DataFrame.  
    - Group the data by decade and calculate the **mean rating** per decade.
 - **Hint:** Use Pandas functions such as .info(), .describe(), .head(), .tail(), .unique(), .groupby(), .mean(), .sort_values().
-- Run your script with the command: `python ./lab6i.py` and verify the output.
+- Run your script with the command: `python ./lab6j.py` and verify the output.
 
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
