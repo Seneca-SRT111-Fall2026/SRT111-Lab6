@@ -1,9 +1,10 @@
 # Lab 6
 In this lab, you will create ten simple Python scripts. All scripts must be written in GitHub Codespaces. 
-In this lab, you will learn how to work with NumPy and Pandas, two of the most widely used Python libraries for data analysis and scientific computing. You will begin by exploring the basics of NumPy arrays, performing mathematical operations, and manipulating array data. Then, you will transition to Pandas, where you will learn how to work with Series and DataFrames to handle, analyze, and visualize real-world datasets.
+In this lab, you will work with exception handling and two of the most widely used Python libraries for data analysis and scientific computing: NumPy and Pandas. You will begin by learning how to identify and handle runtime errors using Python’s exception handling mechanisms to make your programs more robust and reliable. Next, you will explore the basics of NumPy arrays, perform mathematical operations, and manipulate array data. Then, you will transition to Pandas, where you will learn how to work with Series and DataFrames to handle, analyze, and visualize real-world datasets.
 By the end of this lab, you will have a solid foundation in using these libraries for numerical computation and data analysis.
 
 # Lab Objectives
+- To be able to handle and raise exceptions.
 - Understand the role of NumPy in numerical computing.
 - Create and manipulate NumPy arrays.
 - Perform mathematical and statistical operations on arrays.
@@ -24,7 +25,43 @@ For each task:
 5. After completing all tasks, **convert the Word document to PDF**.  Name the PDF file using your **yoursenecausername.pdf**
 6. **Submit the PDF file** as your final lab submission on Blackbaord.
 
-## INVESTIGATION 1: CREATING AND USING ARRAYS IN NumPy
+
+## INVESTIGATION 1: Exceptions and Error Handling
+
+In this investigation, you will learn how to handle run time errors (exceptions). You were introduced to this topic in the last class of this week. In python, when a run time error occurs, python interpreter raises an exception. In this investigation, you will use exception handling mechanism i.e try-except block to handle run time errors, by gracefully quitting the program displaying a useful error message.
+
+Remember the following points form your lesson this week:
+- The try block lets you test a block of code that can generate a run time error.
+- The except block lets you handle the error.
+- The else block lets you execute code when there is no error.
+- The finally block lets you execute code, regardless of the result of the try- and except blocks.
+
+There are many scenarios when your script can generate run time errors, for example trying to open a file that does not exist, trying to access a folder for which you do not have permissions or simply when you are trying to convert a string into integer which cannot be converted into an integer.
+Check the link: https://docs.python.org/3/library/exceptions.html#exception-hierarchy. You can see how errors get caught in python. The options FileNotFoundError, PermissionError, and IsADirectory are all inherited from OSError. This means that while using more specific errors might be useful for better error messages and handling, it's not always possible to catch every error all the time.
+
+## lab6a.py
+### Handling FileNotFoundError and ValueError 
+In this activity, you will handle FileNotFoundError.
+- Create a text file called ‘numbers.txt’. Add the following lines in your file.
+ ```Python
+ 34	
+ 34f
+ 5
+ 6
+```
+- Complete the functions given in your lab6a.py file accroding to the instructions provided.
+- Run the script from command line using the command: python ./lab6a.py
+
+## lab6b.py
+### Raise ZeroDivisionError
+`ZeroDivisionError` in Python occurs when an attempt is made to divide a number by zero, which is mathematically undefined.
+- Complete the functions given in your lab5f.py file accroding to the instructions provided.
+- Run the script from command line using the command: python ./lab5f.py
+
+
+
+
+## INVESTIGATION 2: CREATING AND USING ARRAYS IN NumPy
 
 NumPy is a Python library implemented in C language for creating and manipulating data in large arrays at speed. It provides:
 - Multi-dimensional arrays (ndarray) that are much more efficient than Python lists.
