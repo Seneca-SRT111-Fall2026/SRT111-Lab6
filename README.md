@@ -297,10 +297,10 @@ print("\nFirst row:\n", df.iloc[0])
 - Print the entire DataFrame.
 - Perform the following operations:
 - Print the `"Title"` column.  
-   - Print the `"Author"` column.  
-   - Print the first 3 rows using `.head()`.  
-   - Print the number of rows and columns using `.shape`.  
-   - Print the data type of each column using `.dtypes`.
+- Print the `"Author"` column.  
+- Print the first 3 rows using `.head()`.  
+- Print the number of rows and columns using `.shape`.  
+- Print the data type of each column using `.dtypes`.
 - Run your script with the command: `python ./lab6h.py` and verify the output.
 ---
 ### lab6i.py - Exploring and Analyzing a DataFrame
