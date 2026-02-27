@@ -85,8 +85,9 @@ NumPy is a Python library implemented in C language for creating and manipulatin
 
 NumPy is the foundation for many other libraries such as Pandas, Matplotlib, SciPy, and Scikit-learn. In the slides you saw different ways of creating arrays and initializing them. This lab deals with testing your understanding of those methods discussed in the slides.
 
-<hr style="border-top: 1px dotted #999;">
-
+```code
+---------------------------------------------------------------------------------------------------------------------------------
+```
 ### Task 1 - Creating 1D Arrays and Array Attributes
 **Objective:** Learn how to create NumPy arrays from Python lists.
 
