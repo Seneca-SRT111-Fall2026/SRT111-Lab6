@@ -248,7 +248,7 @@ This technique is widely used in log analysis, anomaly detection, and traffic mo
 ```yaml
 500, 1500, 800, 2000, 750, 1200, 3000
 ````
-- In the file `task6.py`,cCreate a NumPy array with these values.
+- In the file `task6.py`,create a NumPy array with these values.
 - Calculate the average packet size.
 - Extract all packet sizes greater than 1000 bytes, use Boolean indexing (no loops allowed).
 - Count how many packets are greater than 1000 bytes.
