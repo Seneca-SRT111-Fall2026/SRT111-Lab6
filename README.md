@@ -231,7 +231,7 @@ print("\nReshaped to 2x2x3 Array:\n", arr3d)
 
 ----
 
-## Task 6 – Mini Data Analysis Challenge (Boolean Indexing)
+## Task 6 – Mini Data Analysis Using Boolean Indexing
 
 **Objective:** Learn how to use Boolean indexing in NumPy to filter and analyze data based on conditions.
 
