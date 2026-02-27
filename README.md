@@ -97,14 +97,12 @@ print("1D Array:", arr1)
 ```
 **Instructions:**
 - In `task1.py`, create a NumPy array containing the following numbers in a variable called  `array1 `:
-  ``` text
+``` text
 10, 20, 30, 40, 50
 ```
 - Print the array.
 - Print the type of the object `array1 `
 - Print the shape of the array.
-- Create the same array using `linspace` and save it in a variable called `array2`.
-In task1.py, write code to create an array with values from 20 to 49 (inclusive) using `np.arange()`. Save it in a variable called `array1`.
 - Create the same array using `linspace` and save it in a variable called `array2`.
 - Run your script using the command: `python ./task1.py` and verify the output.
 
