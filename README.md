@@ -69,7 +69,7 @@ For each task:
    - Your **code** in the editor.  
    - The **terminal output**, including your **username** visible in the terminal.  
 4. Insert the screenshot into a Word document under the heading that matches the task name:  
-   - Example: **Task 1**, **Task 2**, **Task 3ew3**, etc.  
+   - Example: **Task 1**, **Task 2**, **Task 3**, etc.  
 5. After completing all tasks, convert the Word document to PDF.  Name the PDF file using your **yoursenecausername.pdf**
 6. Submit the PDF file as your final lab submission on Blackbaord.
 
