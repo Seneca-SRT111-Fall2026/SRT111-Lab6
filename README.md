@@ -85,7 +85,7 @@ NumPy is a Python library implemented in C language for creating and manipulatin
 
 NumPy is the foundation for many other libraries such as Pandas, Matplotlib, SciPy, and Scikit-learn. In the slides you saw different ways of creating arrays and initializing them. This lab deals with testing your understanding of those methods discussed in the slides.
 
-### Task 1 - Creating 1D Arrays
+### Task 1 - Creating 1D Arrays and Array Attributes
 **Objective:** Learn how to create NumPy arrays from Python lists.
 
 NumPy, provides an array object similar to a list in Python but with added functionality for numerical operations.
@@ -97,18 +97,83 @@ print("1D Array:", arr1)
 ```
 **Instructions:**
 - In `task1.py`, create a NumPy array containing the following numbers in a variable called  `array1 `:
-``` text
+``` yaml
 10, 20, 30, 40, 50
 ```
 - Print the array.
-- Print the type of the object `array1 `
-- Print the shape of the array.
-- Create the same array using `linspace` and save it in a variable called `array2`.
+- Print the type of the object `array1 ` using `.dtype`
+- Print the shape of the array using `.shape`.
+- Create the same array using `linspace` and save it in a variable called `array2`. Print this array.
 - Run your script using the command: `python ./task1.py` and verify the output.
 
 ---
 
-### Task2 - Creating 2D Arrays and Array Attributes
+### Task2 - Array Arithmetic (Vectorized Operations, Broadcasting)
+**Objective:** To practice performing element-wise arithmetic operations onNumPy arrays.
+
+NumPy allows element-wise arithmetic on arrays, which is much faster and more concise than using Python loops. Broadcasting lets you perform operations on arrays of different shapes in a consistent way. Look at the example given below:
+```Python
+import numpy as np
+
+# Create two 1D arrays
+a = np.array([1, 2, 3])
+b = np.array([10, 20, 30])
+
+# Example of addition
+print("Addition:", a + b)  # [11 22 33]
+
+# Broadcasting example: adding a scalar to an array
+print("Add 5 to each element:", a + 5)  # [6 7 8]
+
+```
+**Instructions:**
+- In your task2.py file, create the following 1D arrays:
+```Python
+arr1 = np.array([2, 4, 6, 8])
+arr2 = np.array([1, 3, 5, 7])
+```
+- Perform all of the following operations and print the results:
+   - Addition using `arr1 + arr2`
+   - Subtraction  `arr1 - arr2`
+   - Multiplicationn `arr1 * arr2`
+- Add 10 to each element of `arr1` using broadcasting and print print the updated array.
+- Multiply each element of `arr2` by 2, and print the updated array.
+- Run your script with the command: `python ./task2.py` and verify the output.
+- In 2-4 sentences write down your reflections of these operations, why you did not have to use loops with Numpy arrays.
+
+----
+
+## Task 3 – Statistical Operations with NumPy
+**Objective:** Learn how to use built-in NumPy functions to calculate basic statistical values from numerical data.
+
+NumPy provides built-in functions that allow you to quickly compute statistical measures without writing loops.
+
+In this task, you will use the following functions:
+
+- `np.sum()` → Calculates the total of all values in an array  
+- `np.mean()` → Calculates the average value  
+- `np.max()` → Returns the largest value  
+- `np.min()` → Returns the smallest value  
+
+These functions are efficient and commonly used in data analysis and cybersecurity log analysis.
+
+**Instructions:**
+- In task3.py, create a NumPy array representing daily login attempts:
+```yaml
+15, 22, 13, 40, 30, 27, 18
+```
+Then calculate and print:
+- The total number of login attempts
+- The average number of login attempts
+- The maximum number of login attempts
+- The minimum number of login attempts
+- Print clear labels with your output
+- Run your script with the command: `python ./task3.py` and verify the output.
+
+
+----
+
+### Task4 - 2D Arrays (Matrix Form)
 **Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
 
 NumPy can also create multi-dimensional arrays, which are useful for working with tabular or matrix-like data.
@@ -119,19 +184,18 @@ arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 print("2D Array:\n", arr2)
 ```
 **Instructions:**
-- In task2.py, write code to create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
-- Print your array with a descriptive message, e.g. "3x3 Array:"
-- Expected output of the array is:
-```yaml
-[[1 2 3]
- [4 5 6]
- [7 8 9]]
-```
-- Next print the following attributes of `array3`.
-   - array3.shape → should show (3, 3)
-   - array3.size → should show 9
-   - array3.dtype → data type of the elements
-- Run your script using the command: `python ./task2.py` and verify the output.
+- In task4.py, write code to create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
+   ```yaml
+   1  2  3
+   4  5  6
+   7  8  9
+   ```
+- Print the full matrix with a descriptive message, e.g. "3x3 Array:"
+- Print the shape and size of array.
+- Add 5 to each elements of array.
+- Print the second row of array.
+- Print the third column of array.
+- Run your script using the command: `python ./task4.py` and verify the output.
   
 ---
 
@@ -210,40 +274,7 @@ print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
    - Subarray of the first 2 rows and first 2 columns
 - Run your script with the command: `python ./lab6d.py` and verify the output.
 ---
-### task5.py - Arithmetic Operations and Broadcasting in NumPy
-**Objective:** To practice performing element-wise arithmetic operations on 1D and 2D NumPy arrays.
 
-NumPy allows element-wise arithmetic on arrays, which is much faster and more concise than using Python loops. Broadcasting lets you perform operations on arrays of different shapes in a consistent way. Look at the example given below:
-```Python
-import numpy as np
-
-# Create two 1D arrays
-a = np.array([1, 2, 3])
-b = np.array([10, 20, 30])
-
-# Example of addition
-print("Addition:", a + b)  # [11 22 33]
-
-# Broadcasting example: adding a scalar to an array
-print("Add 5 to each element:", a + 5)  # [6 7 8]
-
-```
-**Instructions:**
-- Create a file named task5.py and add your name and date in the comment section
-- In your task5.py file, create the following 1D arrays:
-```Python
-arr1 = np.array([2, 4, 6, 8])
-arr2 = np.array([1, 3, 5, 7])
-```
-- Perform all of the following operations and print the results:
-   - Addition
-   - Subtraction
-   - Multiplication
-- Add 10 to each element of `arr1` using broadcasting and print print the updated array.
-- Multiply each element of `arr2` by 2, and print the updated array
-- Create a 2D array of your choice of elements.
-- Add 5 to all elements and print your array.
-- Run your script with the command: `python ./lab6e.py` and verify the output.
 ---
 ### task6.py - Reshaping Arrays in NumPy
 **Objective:** Learn how to change the shape of 1D arrays into 2D or 3D arrays using NumPy’s reshape() method, without modifying the array data.
