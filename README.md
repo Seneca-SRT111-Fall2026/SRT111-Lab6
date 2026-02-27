@@ -20,7 +20,7 @@ For each task:
    - Your **code** in the editor.  
    - The **terminal output**, including your **username** visible in the terminal.  
 4. **Insert the screenshot** into a Word document under the heading that matches the task name:  
-   - Example: **Lab6a**, **Lab6b**, **Lab6c**, etc.  
+   - Example: **Task 1**, **Task 2**, **Task 3ew3**, etc.  
 5. After completing all tasks, **convert the Word document to PDF**.  Name the PDF file using your **yoursenecausername.pdf**
 6. **Submit the PDF file** as your final lab submission on Blackbaord.
 
@@ -34,7 +34,7 @@ NumPy is a Python library implemented in C language for creating and manipulatin
 
 NumPy is the foundation for many other libraries such as Pandas, Matplotlib, SciPy, and Scikit-learn. In the slides you saw different ways of creating arrays and initializing them. This lab deals with testing your understanding of those methods discussed in the slides.
 
-### lab6a.py - Creating 1D Arrays
+### Task 1 - Creating 1D Arrays
 **Objective:** Learn how to create NumPy arrays from Python lists.
 
 NumPy, provides an array object similar to a list in Python but with added functionality for numerical operations.
@@ -45,15 +45,16 @@ arr1 = np.array([1, 2, 3, 4, 5])
 print("1D Array:", arr1)
 ```
 **Instructions:**
-- In your lab6a.py file write code create an array with values from 20 to 49 (inclusive) using `np.arange()`. Save it in a variable called `array1`.
-- Create the same array in a different way, for example either using `linspace` or a different method and save it in a variable called `array2`.
+- Create a file named task1.py and add your name and date in the comment section.
+- In this file, write code to create an array with values from 20 to 49 (inclusive) using `np.arange()`. Save it in a variable called `array1`.
+- Create the same array using `linspace` and save it in a variable called `array2`.
 - Expected output (both arrays should look like):
   ```yaml
   [20 21 22 23 ... 49]
   ```
-- Run your script using the command: `python ./lab6a.py` and verify the output.
+- Run your script using the command: `python ./task1.py` and verify the output.
 ---
-### lab6b.py - Creating 2D Arrays and Array Attributes
+### task2.py - Creating 2D Arrays and Array Attributes
 **Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
 
 NumPy can also create multi-dimensional arrays, which are useful for working with tabular or matrix-like data.
@@ -64,7 +65,8 @@ arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 print("2D Array:\n", arr2)
 ```
 **Instructions:**
-- In your lab6b.py file create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
+- Create a file named task2.py and add your name and date in the comment section.
+- In this file, write code to create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
 - Print your array with a descriptive message, e.g. "3x3 Array:"
 - Expected output of the array is:
 ```yaml
@@ -76,9 +78,9 @@ print("2D Array:\n", arr2)
    - array3.shape → should show (3, 3)
    - array3.size → should show 9
    - array3.dtype → data type of the elements
-- Run your script using the command: `python ./lab6b.py` and verify the output.
+- Run your script using the command: `python ./task2.py` and verify the output.
 ---
-### lab6c.py - Accessing and Modifying Elements (Indexing and Slicing)
+### task3.py - Accessing and Modifying Elements (Indexing and Slicing)
 **Objective:** Learn how to apply common slicing scenarios in 1D arrays.
 
 NumPy arrays allow you to access and modify elements using indexing and slicing. This works similarly to Python lists, but NumPy also supports powerful multi-dimensional indexing. Look at the examples below. You may want to run this code and observe the output.
@@ -104,16 +106,17 @@ print("Modified 1D Array:", arr1)
 
 ```
 **Instructions:**
-- In your lab6c.py file write code to create a 1D NumPy array with values [3, 6, 9, 12, 15, 18, 21].
+- Create a file named task3.py and add your name and date in the comment section.
+- In your task3.py file write code to create a 1D NumPy array with values [3, 6, 9, 12, 15, 18, 21].
 - Print:
    - The first element
    - The last element
    - Elements from index 2 to end
    - Elements with a step of 3
 - Modify the second element (index 1) to 99 and print the updated array.
-- Run your script with the command: `python ./lab6c.py` and verify the output.
+- Run your script with the command: `python ./task3.py` and verify the output.
 ---
-### lab6d.py - Indexing and Slicing on 2D Array
+### task4.py - Indexing and Slicing on 2D Array
 **Objective:** Learn how to apply common slicing scenarios in 2D arrays.
 You are given some examples below, you may want to run this code and observe the output.
 ```Python
@@ -142,7 +145,8 @@ print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
 #  [5 6 7]]
 ```
 **Instructions:**
-- In your lab6d.py file write code to create a 2D array with values 1–12 arranged in 3 rows × 4 columns. Save it in `array2`.
+- Create a file named task2.py and add your name and date in the comment section.
+- In your task4.py file write code to create a 2D array with values 1–12 arranged in 3 rows × 4 columns. Save it in `array2`.
 - Print the following using indexing and slicing::
    - Element at row 1, column 2
    - First row
@@ -150,7 +154,7 @@ print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
    - Subarray of the first 2 rows and first 2 columns
 - Run your script with the command: `python ./lab6d.py` and verify the output.
 ---
-### lab6e.py - Arithmetic Operations and Broadcasting in NumPy
+### task5.py - Arithmetic Operations and Broadcasting in NumPy
 **Objective:** To practice performing element-wise arithmetic operations on 1D and 2D NumPy arrays.
 
 NumPy allows element-wise arithmetic on arrays, which is much faster and more concise than using Python loops. Broadcasting lets you perform operations on arrays of different shapes in a consistent way. Look at the example given below:
@@ -169,7 +173,8 @@ print("Add 5 to each element:", a + 5)  # [6 7 8]
 
 ```
 **Instructions:**
-- In your lab6e.py file, create the following 1D arrays:
+- Create a file named task5.py and add your name and date in the comment section
+- In your task5.py file, create the following 1D arrays:
 ```Python
 arr1 = np.array([2, 4, 6, 8])
 arr2 = np.array([1, 3, 5, 7])
@@ -184,7 +189,7 @@ arr2 = np.array([1, 3, 5, 7])
 - Add 5 to all elements and print your array.
 - Run your script with the command: `python ./lab6e.py` and verify the output.
 ---
-### lab6f.py - Reshaping Arrays in NumPy
+### task6.py - Reshaping Arrays in NumPy
 **Objective:** Learn how to change the shape of 1D arrays into 2D or 3D arrays using NumPy’s reshape() method, without modifying the array data.
 
 Sometimes, you may need to change the shape of an array to make it suitable for certain calculations or to match the shape of other arrays. NumPy’s reshape() method allows you to transform 1D arrays into 2D or 3D arrays without changing the data. This is a key skill when working with numerical data in matrices.
@@ -204,7 +209,8 @@ arr3d = arr.reshape(2, 2, 3)
 print("\nReshaped to 2x2x3 Array:\n", arr3d)
 ```
 **Instructions:**
-- In your lab6f.py file, Create a 1D array with values from 1 to 12.
+- Create a file named task6.py and add your name and date in the comment section.
+- In your task6.py file, Create a 1D array with values from 1 to 12.
 - Reshape it into a 3×4 2D array and print it.
 - Reshape the same array into a 2×2×3 3D array and print it.
 - Verify that the total number of elements is the same in all shapes.
