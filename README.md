@@ -129,7 +129,7 @@ print("Add 5 to each element:", a + 5)  # [6 7 8]
 
 ```
 **Instructions:**
-- In your task2.py file, create the following 1D arrays:
+- In `task2.py` file, create the following 1D arrays:
 ```Python
 arr1 = np.array([2, 4, 6, 8])
 arr2 = np.array([1, 3, 5, 7])
@@ -160,7 +160,7 @@ In this task, you will use the following functions:
 These functions are efficient and commonly used in data analysis and cybersecurity log analysis.
 
 **Instructions:**
-- In task3.py, create a NumPy array representing daily login attempts:
+- In `task3.py`, create a NumPy array representing daily login attempts:
 ```yaml
 15, 22, 13, 40, 30, 27, 18
 ```
@@ -186,7 +186,7 @@ arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 print("2D Array:\n", arr2)
 ```
 **Instructions:**
-- In task4.py, write code to create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
+- In `task4.py`, write code to create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
    ```yaml
    1  2  3
    4  5  6
@@ -221,7 +221,7 @@ arr3d = arr.reshape(2, 2, 3)
 print("\nReshaped to 2x2x3 Array:\n", arr3d)
 ```
 **Instructions:**
-- In your task5.py file, Create a 1D array with values from 1 to 12.
+- In your `task5.py` file, Create a 1D array with values from 1 to 12.
 - Reshape it into a 3×4 matrix using `np.arange()` and print it.
 - Reshape the same array into a 2×2×3 matrix using `.reshape()`and print it.
 - Verify that the total number of elements is the same in all shapes.
