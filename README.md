@@ -108,7 +108,7 @@ print("1D Array:", arr1)
 
 ---
 
-### task2.py - Creating 2D Arrays and Array Attributes
+### Task2 - Creating 2D Arrays and Array Attributes
 **Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
 
 NumPy can also create multi-dimensional arrays, which are useful for working with tabular or matrix-like data.
@@ -119,8 +119,7 @@ arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 print("2D Array:\n", arr2)
 ```
 **Instructions:**
-- Create a file named task2.py and add your name and date in the comment section.
-- In this file, write code to create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
+- In task2.py, write code to create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
 - Print your array with a descriptive message, e.g. "3x3 Array:"
 - Expected output of the array is:
 ```yaml
@@ -133,8 +132,10 @@ print("2D Array:\n", arr2)
    - array3.size → should show 9
    - array3.dtype → data type of the elements
 - Run your script using the command: `python ./task2.py` and verify the output.
+  
 ---
-### task3.py - Accessing and Modifying Elements (Indexing and Slicing)
+
+### Task 3 - Accessing and Modifying Elements (Indexing and Slicing)
 **Objective:** Learn how to apply common slicing scenarios in 1D arrays.
 
 NumPy arrays allow you to access and modify elements using indexing and slicing. This works similarly to Python lists, but NumPy also supports powerful multi-dimensional indexing. Look at the examples below. You may want to run this code and observe the output.
@@ -160,7 +161,6 @@ print("Modified 1D Array:", arr1)
 
 ```
 **Instructions:**
-- Create a file named task3.py and add your name and date in the comment section.
 - In your task3.py file write code to create a 1D NumPy array with values [3, 6, 9, 12, 15, 18, 21].
 - Print:
    - The first element
@@ -169,7 +169,9 @@ print("Modified 1D Array:", arr1)
    - Elements with a step of 3
 - Modify the second element (index 1) to 99 and print the updated array.
 - Run your script with the command: `python ./task3.py` and verify the output.
----
+
+  ---
+
 ### task4.py - Indexing and Slicing on 2D Array
 **Objective:** Learn how to apply common slicing scenarios in 2D arrays.
 You are given some examples below, you may want to run this code and observe the output.
