@@ -96,15 +96,20 @@ arr1 = np.array([1, 2, 3, 4, 5])
 print("1D Array:", arr1)
 ```
 **Instructions:**
-- Create a file named task1.py and add your name and date in the comment section.
-- In this file, write code to create an array with values from 20 to 49 (inclusive) using `np.arange()`. Save it in a variable called `array1`.
+- In `task1.py`, create a NumPy array containing the following numbers in a variable called  `array1 `:
+  ``` text
+10, 20, 30, 40, 50
+```
+- Print the array.
+- Print the type of the object `array1 `
+- Print the shape of the array.
 - Create the same array using `linspace` and save it in a variable called `array2`.
-- Expected output (both arrays should look like):
-  ```yaml
-  [20 21 22 23 ... 49]
-  ```
+In task1.py, write code to create an array with values from 20 to 49 (inclusive) using `np.arange()`. Save it in a variable called `array1`.
+- Create the same array using `linspace` and save it in a variable called `array2`.
 - Run your script using the command: `python ./task1.py` and verify the output.
+
 ---
+
 ### task2.py - Creating 2D Arrays and Array Attributes
 **Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
 
