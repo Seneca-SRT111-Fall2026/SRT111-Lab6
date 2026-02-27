@@ -64,7 +64,7 @@ import numpy as np
 # Submission Instructions
 For each task:
 1. Write the script in Codespaces or your local VSCode.  
-2. Run the script from the **terminal**.  
+2. Run the script from the terminal.  
 3. Take a screenshot that clearly shows:  
    - Your **code** in the editor.  
    - The **terminal output**, including your **username** visible in the terminal.  
