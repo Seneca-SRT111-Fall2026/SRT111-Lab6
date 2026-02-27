@@ -63,15 +63,15 @@ import numpy as np
 
 # Submission Instructions
 For each task:
-1. **Write the script** in Codespaces.  
-2. **Run the script** from the **terminal**.  
-3. **Take a screenshot** that clearly shows:  
+1. Write the script in Codespaces or your local VSCode.  
+2. Run the script from the **terminal**.  
+3. Take a screenshot that clearly shows:  
    - Your **code** in the editor.  
    - The **terminal output**, including your **username** visible in the terminal.  
-4. **Insert the screenshot** into a Word document under the heading that matches the task name:  
+4. Insert the screenshot into a Word document under the heading that matches the task name:  
    - Example: **Task 1**, **Task 2**, **Task 3ew3**, etc.  
-5. After completing all tasks, **convert the Word document to PDF**.  Name the PDF file using your **yoursenecausername.pdf**
-6. **Submit the PDF file** as your final lab submission on Blackbaord.
+5. After completing all tasks, convert the Word document to PDF.  Name the PDF file using your **yoursenecausername.pdf**
+6. Submit the PDF file as your final lab submission on Blackbaord.
 
 ----
 
