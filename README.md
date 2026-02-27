@@ -101,8 +101,8 @@ print("1D Array:", arr1)
 10, 20, 30, 40, 50
 ```
 - Print the array.
-- Print the type of the object `array1 ` using `.dtype`
-- Print the shape of the array using `.shape`.
+- Print the type of the object `array1 ` using the attribute `.dtype`
+- Print the shape of the array using using the attribute `.shape`.
 - Create the same array using `linspace` and save it in a variable called `array2`. Print this array.
 - Run your script using the command: `python ./task1.py` and verify the output.
 
@@ -163,13 +163,13 @@ These functions are efficient and commonly used in data analysis and cybersecuri
 15, 22, 13, 40, 30, 27, 18
 ```
 Then calculate and print:
-- The total number of login attempts
-- The average number of login attempts
-- The maximum number of login attempts
-- The minimum number of login attempts
-- Print clear labels with your output
+- The total number of login attempts.
+- The average number of login attempts.
+- The maximum number of login attempts.
+- The minimum number of login attempts.
+- Print clear labels with your output.
 - Run your script with the command: `python ./task3.py` and verify the output.
-
+- In 2-4 sentences, explain how NumPy arrays can be useful in Cybersecurity.
 
 ----
 
@@ -193,90 +193,13 @@ print("2D Array:\n", arr2)
 - Print the full matrix with a descriptive message, e.g. "3x3 Array:"
 - Print the shape and size of array.
 - Add 5 to each elements of array.
-- Print the second row of array.
+- Print the second row of array (Numpy arrays follow the same indiexing and slicing operations as Python lists).
 - Print the third column of array.
 - Run your script using the command: `python ./task4.py` and verify the output.
   
 ---
 
-### Task 3 - Accessing and Modifying Elements (Indexing and Slicing)
-**Objective:** Learn how to apply common slicing scenarios in 1D arrays.
-
-NumPy arrays allow you to access and modify elements using indexing and slicing. This works similarly to Python lists, but NumPy also supports powerful multi-dimensional indexing. Look at the examples below. You may want to run this code and observe the output.
-```Python
-import numpy as np
-
-arr1 = np.array([2, 4, 6, 8, 10, 12, 14])
-print("Original 1D Array:", arr1)
-
-# Indexing
-print("First element:", arr1[0])
-print("Last element:", arr1[-1])
-
-# Slicing
-print("Elements from index 1 to 4:", arr1[1:5])       # middle elements
-print("Elements from start to index 4 (exclusive):", arr1[:4])
-print("Elements from index 3 to the end:", arr1[3:])
-print("Elements with a step of 2:", arr1[::2])
-
-# Modifying values
-arr1[1] = 99
-print("Modified 1D Array:", arr1)
-
-```
-**Instructions:**
-- In your task3.py file write code to create a 1D NumPy array with values [3, 6, 9, 12, 15, 18, 21].
-- Print:
-   - The first element
-   - The last element
-   - Elements from index 2 to end
-   - Elements with a step of 3
-- Modify the second element (index 1) to 99 and print the updated array.
-- Run your script with the command: `python ./task3.py` and verify the output.
-
-  ---
-
-### task4.py - Indexing and Slicing on 2D Array
-**Objective:** Learn how to apply common slicing scenarios in 2D arrays.
-You are given some examples below, you may want to run this code and observe the output.
-```Python
-import numpy as np
-
-# Create a 2D array with 3 rows and 4 columns
-arr2d = np.array([[1, 2, 3, 4],
-                  [5, 6, 7, 8],
-                  [9, 10, 11, 12]])
-
-print("Original 2D Array:\n", arr2d)
-
-# Access a single element: row 0, column 2
-print("Element at row 0, col 2:", arr2d[0, 2])  # Output: 3
-
-# Access a full row: row 1 (second row)
-print("Second row:", arr2d[1, :])  # Output: [5 6 7 8]
-
-# Access a full column: column 3 (fourth column)
-print("Fourth column:", arr2d[:, 3])  # Output: [ 4  8 12]
-
-# Slice a subarray: first 2 rows and first 3 columns
-print("Subarray (first 2 rows, first 3 columns):\n", arr2d[0:2, 0:3])
-# Output:
-# [[1 2 3]
-#  [5 6 7]]
-```
-**Instructions:**
-- Create a file named task2.py and add your name and date in the comment section.
-- In your task4.py file write code to create a 2D array with values 1–12 arranged in 3 rows × 4 columns. Save it in `array2`.
-- Print the following using indexing and slicing::
-   - Element at row 1, column 2
-   - First row
-   - Third column
-   - Subarray of the first 2 rows and first 2 columns
-- Run your script with the command: `python ./lab6d.py` and verify the output.
----
-
----
-### task6.py - Reshaping Arrays in NumPy
+### Task 5 - Reshaping Arrays in NumPy
 **Objective:** Learn how to change the shape of 1D arrays into 2D or 3D arrays using NumPy’s reshape() method, without modifying the array data.
 
 Sometimes, you may need to change the shape of an array to make it suitable for certain calculations or to match the shape of other arrays. NumPy’s reshape() method allows you to transform 1D arrays into 2D or 3D arrays without changing the data. This is a key skill when working with numerical data in matrices.
@@ -296,27 +219,50 @@ arr3d = arr.reshape(2, 2, 3)
 print("\nReshaped to 2x2x3 Array:\n", arr3d)
 ```
 **Instructions:**
-- Create a file named task6.py and add your name and date in the comment section.
-- In your task6.py file, Create a 1D array with values from 1 to 12.
-- Reshape it into a 3×4 2D array and print it.
-- Reshape the same array into a 2×2×3 3D array and print it.
+- In your task5.py file, Create a 1D array with values from 1 to 12.
+- Reshape it into a 3×4 matrix using `np.arange()` and print it.
+- Reshape the same array into a 2×2×3 matrix using `.reshape()`and print it.
 - Verify that the total number of elements is the same in all shapes.
-- Run your script with the command: `python ./lab6f.py` and verify the output.
+- Run your script with the command: `python ./task5.py` and verify the output.
 
+----
 
+## Task 6 – Mini Data Analysis Challenge (Boolean Indexing)
+
+**Objective:** Learn how to use Boolean indexing in NumPy to filter and analyze data based on conditions.
+
+In data analytics and cybersecurity, we often need to filter data that meets specific conditions.  
+NumPy allows this using **Boolean indexing**, which lets you select values from an array based on logical comparisons.
+
+For example:
+- `data > 1000` creates a Boolean array (True/False values)
+- `data[data > 1000]` returns only the values that meet the condition
+
+This technique is widely used in log analysis, anomaly detection, and traffic monitoring.
+
+**Instructions:**
+
+- You are given the following network packet sizes (in bytes):
+```yaml
+500, 1500, 800, 2000, 750, 1200, 3000
+````
+- In the file `task6.py`,cCreate a NumPy array with these values.
+- Calculate the average packet size.
+- Extract all packet sizes greater than 1000 bytes, use Boolean indexing (no loops allowed).
+- Count how many packets are greater than 1000 bytes.
+- Print clear and labeled output.
+- Run your script with the command: `python ./task5.py` and verify the output.
+
+----
 
 ## Lab 6 Sign-Off
 - Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
 - The PDF must include screenshots of the following scripts and their terminal output, clearly showing your GitHub username.
-    - lab6a.py
-    - lab6b.py
-    - lab6c.py
-    - lab6d.py
-    - lab6e.py
-    - lab6f.py
-    - lab6g.py
-    - lab6h.py
-    - lab6i.py
-    - lab6j.py
+    - task1.py
+    - task2.py
+    - task3.py
+    - task4.py
+    - task5.py
+    - task6.py
 - Ensure the code and output are clearly readable. Screenshots should be high-resolution (minimum 800x600) and not blurry.
 - Blurry or unreadable submissions will be returned for redo. Resubmissions will only be graded as Satisfactory with a grade of 0, provided the work is satisfactory.
