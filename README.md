@@ -169,7 +169,7 @@ Then calculate and print:
 ----
 
 ### Task 4 - 2D Arrays (Matrix Form)
-**Objective:** Learn how to create a two dimenssional NumPy arrays from Python lists and print their attributes.
+**Objective:** Learn how to create a two dimensional NumPy arrays from Python lists and print their attributes.
 
 NumPy can also create multi-dimensional arrays, which are useful for working with tabular or matrix-like data.
 ```Python
@@ -187,8 +187,8 @@ print("2D Array:\n", arr2)
    ```
 - Print the full matrix with a descriptive message, e.g. "3x3 Array:"
 - Print the shape and size of the array.
-- Add 5 to each elements of the array and save the result in a new array. Print the new array.
-- Print the second row of array (Numpy arrays follow the same indiexing and slicing operations as Python lists).
+- Add 5 to each element of the array and save the result in a new array. Print the new array.
+- Print the second row of the array (NumPy arrays follow the same indexing and slicing operations as Python lists).
 - Print the third column of array.
 - Run your script using the command: `python ./task4.py` and verify the output.
   
@@ -214,7 +214,7 @@ arr3d = arr.reshape(2, 2, 3)
 print("\nReshaped to 2x2x3 Array:\n", arr3d)
 ```
 **Instructions:**
-- In your `task5.py` file, Create a 1D array with values from 1 to 12 using `np.arange()`.
+- In your `task5.py` file, Create a 1D array with values from 1 to 12 using `np.array()`. Save it in a variable called `array1d`.
 - Print the original 1D array with a clear label.
 - Reshape it into a 3×4 matrix using `np.reshape()`.
    - Save it in a variable called `array2d`.
@@ -252,7 +252,7 @@ This technique is widely used in log analysis, anomaly detection, and traffic mo
 ```
 - In the file `task6.py`, create a NumPy array with these values.
 - Calculate the average packet size.
-- Extract all packet sizes greater than 1000 bytes, use Boolean indexing (no loops allowed).
+- Extract all packet sizes greater than 1000 bytes using Boolean indexing (no loops allowed).
 - Count how many packets are greater than 1000 bytes.
 - Print clear and labeled output.
 - Run your script with the command: `python ./task6.py` and verify the output.
@@ -260,7 +260,7 @@ This technique is widely used in log analysis, anomaly detection, and traffic mo
 ----
 
 ## Lab 6 Sign-Off
-- Submit a PDF on Blackboard, named using your `yoursenecausername.pdf`.
+- Submit a PDF on Blackboard, named using your `yoursenecausername.pdf`
 - The PDF must include screenshots of the following scripts and their terminal output, clearly showing your GitHub username.
     - task1.py
     - task2.py
