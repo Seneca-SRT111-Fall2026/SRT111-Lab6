@@ -9,6 +9,13 @@ Environment: GitHub Codespaces
 ## Introduction
 
 In this lab, you will work with **NumPy**, one of the most widely used Python libraries for numerical computing and data analysis.
+NumPy is a Python library implemented in C language for creating and manipulating data in large arrays at speed. It provides:
+- Multi-dimensional arrays (ndarray) that are much more efficient than Python lists.
+- Mathematical operations on entire arrays without writing loops (vectorization).
+- Statistical and linear algebra functions for scientific computing.
+- Tools for reshaping, slicing, and manipulating data efficiently.
+
+NumPy is the foundation for many other libraries such as Pandas, Matplotlib, SciPy, and Scikit-learn. In the slides you saw different ways of creating arrays and initializing them. This lab deals with testing your understanding of those methods discussed in the slides.
 
 NumPy provides support for efficient numerical operations using a powerful data structure called the **NumPy array**. Unlike regular Python lists, NumPy arrays are optimized for performance and allow fast, element-wise mathematical operations.
 
@@ -18,8 +25,6 @@ NumPy is widely used in:
 - Scientific computing
 - Cybersecurity data processing
 - Network and log analysis
-
-In this lab, you will create and manipulate NumPy arrays, perform mathematical and statistical operations, and apply basic data analysis techniques.
 
 By the end of this lab, you will understand how NumPy arrays work and why they are essential for modern data analysis in Python.
 
@@ -44,7 +49,7 @@ By the end of this lab, you will be able to:
 Before starting this lab, ensure the following:
 
 1. Open your GitHub repository and launch GitHub Codespaces.
-3. Inside the repository, create six Python files:
+2.  Inside the repository, create six Python files:
    - `task1.py`
    - `task2.py`
    - `task3.py`
@@ -52,8 +57,8 @@ Before starting this lab, ensure the following:
    - `task5.py`
    - `task6.py`
 
-4. At the top of each Python file, add your name and date in the comment section.
-5. import the NumPy library:
+3. At the top of each Python file, add your name and date in the comment section.
+4. import the NumPy library:
 
 ```python
 import numpy as np
@@ -72,18 +77,6 @@ For each task:
    - Example: **Task 1**, **Task 2**, **Task 3**, etc.  
 5. After completing all tasks, convert the Word document to PDF.  Name the PDF file using your **yoursenecausername.pdf**
 6. Submit the PDF file as your final lab submission on Blackbaord.
-
-----
-
-## INVESTIGATION 1: CREATING AND USING ARRAYS IN NumPy
-
-NumPy is a Python library implemented in C language for creating and manipulating data in large arrays at speed. It provides:
-- Multi-dimensional arrays (ndarray) that are much more efficient than Python lists.
-- Mathematical operations on entire arrays without writing loops (vectorization).
-- Statistical and linear algebra functions for scientific computing.
-- Tools for reshaping, slicing, and manipulating data efficiently.
-
-NumPy is the foundation for many other libraries such as Pandas, Matplotlib, SciPy, and Scikit-learn. In the slides you saw different ways of creating arrays and initializing them. This lab deals with testing your understanding of those methods discussed in the slides.
 
 ----
 
@@ -110,7 +103,7 @@ print("1D Array:", arr1)
 
 ---
 
-### Task2 - Array Arithmetic (Vectorized Operations, Broadcasting)
+### Task 2 - Array Arithmetic (Vectorized Operations, Broadcasting)
 **Objective:** To practice performing element-wise arithmetic operations onNumPy arrays.
 
 NumPy allows element-wise arithmetic on arrays, which is much faster and more concise than using Python loops. Broadcasting lets you perform operations on arrays of different shapes in a consistent way. Look at the example given below:
@@ -175,7 +168,7 @@ Then calculate and print:
 
 ----
 
-### Task4 - 2D Arrays (Matrix Form)
+### Task 4 - 2D Arrays (Matrix Form)
 **Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
 
 NumPy can also create multi-dimensional arrays, which are useful for working with tabular or matrix-like data.
