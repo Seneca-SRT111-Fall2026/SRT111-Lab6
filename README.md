@@ -58,7 +58,7 @@ Before starting this lab, ensure the following:
    - `task6.py`
 
 3. At the top of each Python file, add your name and date in the comment section.
-4. import the NumPy library:
+4. Import the NumPy library:
 
 ```python
 import numpy as np
@@ -76,14 +76,14 @@ For each task:
 4. Insert the screenshot into a Word document under the heading that matches the task name:  
    - Example: **Task 1**, **Task 2**, **Task 3**, etc.  
 5. After completing all tasks, convert the Word document to PDF.  Name the PDF file using your **yoursenecausername.pdf**
-6. Submit the PDF file as your final lab submission on Blackbaord.
+6. Submit the PDF file as your final lab submission on Blackboard.
 
 ----
 
 ### Task 1 - Creating 1D Arrays and Array Attributes
 **Objective:** Learn how to create NumPy arrays from Python lists.
 
-NumPy, provides an array object similar to a list in Python but with added functionality for numerical operations.
+NumPy provides an array object similar to a list in Python but with added functionality for numerical operations.
 ```Python
 import numpy as np  # Step 1: Import NumPy
 # Creating a 1D array using a Python list
@@ -93,10 +93,10 @@ print("1D Array:", arr1)
 **Instructions:**
 - In `task1.py`, create a NumPy array containing the following numbers in a variable called  `array1 `:
 ``` yaml
-10, 20, 30, 40, 50
+10, 20, 30, 40, 50, 60, 70, 80, 90, 100
 ```
 - Print the array.
-- Print the type of the object `array1 ` using the attribute `.dtype`
+- Print the type of the array elements using the attribute `.dtype`
 - Print the shape of the array using using the attribute `.shape`.
 - Create the same array using `linspace` and save it in a variable called `array2`. Print this array.
 - Run your script using the command: `python ./task1.py` and verify the output.
@@ -104,7 +104,7 @@ print("1D Array:", arr1)
 ---
 
 ### Task 2 - Array Arithmetic (Vectorized Operations, Broadcasting)
-**Objective:** To practice performing element-wise arithmetic operations onNumPy arrays.
+**Objective:** To practice performing element-wise arithmetic operations on NumPy arrays.
 
 NumPy allows element-wise arithmetic on arrays, which is much faster and more concise than using Python loops. Broadcasting lets you perform operations on arrays of different shapes in a consistent way. Look at the example given below:
 ```Python
@@ -130,8 +130,8 @@ arr2 = np.array([1, 3, 5, 7])
 - Perform all of the following operations and print the results:
    - Addition using `arr1 + arr2`
    - Subtraction  `arr1 - arr2`
-   - Multiplicationn `arr1 * arr2`
-- Add 10 to each element of `arr1` using broadcasting and print print the updated array.
+   - Multiplication `arr1 * arr2`
+- Add 10 to each element of `arr1` using broadcasting and print the updated array.
 - Multiply each element of `arr2` by 2, and print the updated array.
 - Run your script with the command: `python ./task2.py` and verify the output.
 - In 2-4 sentences write down your reflections of these operations, why you did not have to use loops with Numpy arrays.
@@ -169,7 +169,7 @@ Then calculate and print:
 ----
 
 ### Task 4 - 2D Arrays (Matrix Form)
-**Objective:** Learn how to create a two dimenstional NumPy arrays from Python lists and print its attributes.
+**Objective:** Learn how to create a two dimenssional NumPy arrays from Python lists and print their attributes.
 
 NumPy can also create multi-dimensional arrays, which are useful for working with tabular or matrix-like data.
 ```Python
@@ -179,15 +179,15 @@ arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 print("2D Array:\n", arr2)
 ```
 **Instructions:**
-- In `task4.py`, write code to create a 2D array (3 × 3) with values from 1 to 9. Save it in a variable called `array3`.
+- In `task4.py`, write code to create a 2D array (3 × 3) with values from 1 to 9.
    ```yaml
    1  2  3
    4  5  6
    7  8  9
    ```
 - Print the full matrix with a descriptive message, e.g. "3x3 Array:"
-- Print the shape and size of array.
-- Add 5 to each elements of array.
+- Print the shape and size of the array.
+- Add 5 to each elements of the array and save the result in a new array. Print the new array.
 - Print the second row of array (Numpy arrays follow the same indiexing and slicing operations as Python lists).
 - Print the third column of array.
 - Run your script using the command: `python ./task4.py` and verify the output.
@@ -214,10 +214,19 @@ arr3d = arr.reshape(2, 2, 3)
 print("\nReshaped to 2x2x3 Array:\n", arr3d)
 ```
 **Instructions:**
-- In your `task5.py` file, Create a 1D array with values from 1 to 12.
-- Reshape it into a 3×4 matrix using `np.arange()` and print it.
-- Reshape the same array into a 2×2×3 matrix using `.reshape()`and print it.
-- Verify that the total number of elements is the same in all shapes.
+- In your `task5.py` file, Create a 1D array with values from 1 to 12 using `np.arange()`.
+- Print the original 1D array with a clear label.
+- Reshape it into a 3×4 matrix using `np.reshape()`.
+   - Save it in a variable called `array2d`.
+   - Print the reshaped array with a clear label.
+- Reshape the same original array into a 2×2×3 matrix.
+   - Save it in a variable called `array3d`.
+   - Print the reshaped array with a clear label.
+- Print the total number of elements in:
+   - The original 1D array
+   - The 3 × 4 array
+   - The 2 × 2 × 3 array
+- In 2–3 sentences, briefly explain why the total number of elements must remain the same when reshaping an array.
 - Run your script with the command: `python ./task5.py` and verify the output.
 
 ----
@@ -240,18 +249,18 @@ This technique is widely used in log analysis, anomaly detection, and traffic mo
 - You are given the following network packet sizes (in bytes):
 ```yaml
 500, 1500, 800, 2000, 750, 1200, 3000
-````
-- In the file `task6.py`,create a NumPy array with these values.
+```
+- In the file `task6.py`, create a NumPy array with these values.
 - Calculate the average packet size.
 - Extract all packet sizes greater than 1000 bytes, use Boolean indexing (no loops allowed).
 - Count how many packets are greater than 1000 bytes.
 - Print clear and labeled output.
-- Run your script with the command: `python ./task5.py` and verify the output.
+- Run your script with the command: `python ./task6.py` and verify the output.
 
 ----
 
 ## Lab 6 Sign-Off
-- Submit a PDF on Blackboard, named using your Seneca username (e.g., **yoursenecausername.pdf**).
+- Submit a PDF on Blackboard, named using your `yoursenecausername.pdf`.
 - The PDF must include screenshots of the following scripts and their terminal output, clearly showing your GitHub username.
     - task1.py
     - task2.py
