@@ -214,7 +214,6 @@ finally:
 - `except ValueError as exception:` lets you print the message that Python created, such as `invalid literal for int() with base 10: 'abc'`.
 - The `finally` clause runs whether or not an exception happened. It is used for clean-up that must always happen, such as closing a file.
 - The `with` statement is a shortcut for `try`/`finally` when working with files: it closes the file even if an error happens.
-- The slides use `IOError`. In Python 3, `FileNotFoundError` is a more specific kind of `IOError`, so `except IOError:` also catches a missing file.
 
 </details>
 
