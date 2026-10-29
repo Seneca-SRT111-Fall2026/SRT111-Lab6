@@ -482,8 +482,6 @@ ndim: 2 | shape: (3, 3) | size: 9 | dtype: float64
 
 ```
 
-> **Note:** If you have an older version of NumPy on Windows, you may see `int32` instead of `int64`. That is fine. Notice that `np.linspace()` always creates **floats**, while `np.array()` and `np.arange()` with whole numbers create integers.
-
 <details markdown="1">
 
 <summary><b>Quick Reference: Array Arithmetic and Statistics</b></summary>
